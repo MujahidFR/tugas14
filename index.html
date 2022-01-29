@@ -1,0 +1,122 @@
+<html>
+<title>W3 CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css"> 
+
+<body bgcolor="silver">
+    <div>
+        <img src="banner.png" style="width:100%;height:35%">
+    </div>
+    <div class="w3-bar w3-dark-gray">
+        <button class="w3-bar-item w3-button" onclick="openPilihan('DEVOPS')">DEVOPS</button>
+        <button class="w3-bar-item w3-button" onclick="openPilihan('GAMEDEV')">GAMEDEV</button>
+        <button class="w3-bar-item w3-button" onclick="openPilihan('WEBDEV')">WEBDEV</button>
+        <button class="w3-bar-item w3-button" onclick="openPilihan('UIDESIGN')">UIDESIGN</button>
+        <button class="w3-bar-item w3-button" onclick="openPilihan('PROFILE')">PROFILE</button>
+    </div>
+ 
+    <div id="HOME" class="w3-center w3-container pilihan">
+        <br>
+        <br>
+        <div class="w3-animate-top">
+            <h1><b>SELAMAT DATANG KADET!</b></h1>
+            <h3>SILAHKAN PILIH PROFESI YANG INGIN KAMU KETAHUI</h3>
+        </div>
+    </div>
+
+    <div id="DEVOPS" class="w3-container pilihan w3-animate-zoom w3-center" style="display:none">
+        <br>
+        <img src="devops.png" style="width:25%" alt="devops">
+        <h2>DEVOPS</h2>
+		<p>
+			DevOps is the combination of cultural philosophies, practices, and tools 
+			that increases an organization's ability to deliver applications and services at high velocity: 
+			evolving and improving products at a faster pace than organizations using traditional software 
+			development and infrastructure management processes.
+		</p>
+    </div>
+
+    <div id="GAMEDEV" class="w3-container pilihan w3-animate-left w3-center" style="display:none">
+        <br>
+        <img src="gamedev.png" style="width:25%" alt="gamedev">
+        <h2>GAMEDEV</h2>
+		<p>
+			A video game developer is a software developer specializing in video game development, 
+			the process and related disciplines of creating video games.
+		</p>
+    </div>
+
+    <div id="WEBDEV" class="w3-container pilihan w3-animate-right w3-center" style="display:none">
+        <br>
+        <img src="webdev.png" style="width:25%" alt="webdev">
+        <h2>WEBDEV</h2>
+		<p>
+			A web developer or programmer is someone who takes a web design - which has been created by either a client
+			or a design team - and turns it into a website. They do this by writing lines and lines of complicated code, using a 
+			variety of languages. Web developers have quite a difficult job, because they essentially have to take a language we 
+			understand, such as English, and translate it into a language that a computer understands, such as Python or HTML.
+		</p>
+    </div>
+
+    <div id="UIDESIGN" class="w3-container pilihan w3-animate-bottom w3-center" style="display:none">
+        <br>
+        <img src="uidesigner.png" style="width:25%" alt="uidesigner">
+        <h2>UI/UX DESIGNER</h2>
+		<p>
+			UI or User Interface is the graphical layout of an application. It consists of the buttons users click on, the text 
+			they read, the images, sliders, text entry fields, and all the rest of the items the user interacts with. 
+			This includes screen layout, transitions, interface animations and every single micro-interaction.
+		</p>
+		<p>
+			“UX” stands for “user experience.” A user’s experience of the app is determined by how they interact with it. 
+			Is the experience smooth and intuitive or clunky and confusing? Does navigating the app feel logical or does it 
+			feel arbitrary? Does interacting with the app give people the sense that they’re efficiently accomplishing the tasks 
+			they set out to achieve or does it feel like a struggle? User experience is determined by how easy or difficult it is to
+			interact with the user interface elements that the UI designers have created.
+		</p>
+    </div>
+   
+    <div id="PROFILE" class="w3-center pilihan" style="display:none">
+        <div class="w3-container">
+            <h1><b>PROFILE</b></h1>
+            <div class="w3-card-4">
+                <div class="w3-container w3-dark-grey">
+                    <br>
+                    <img src="pasfoto.jpg" style="width:20%" class="w3-circle" alt="fotoprofil">
+                    <center>
+                        <table class="w3-text-white">
+                            <tr>
+                                <td>NIM</td>
+                                <td>: 10121237</td>
+                            </tr>
+                            <tr>
+                                <td>Nama</td>
+                                <td>: Mujahid Fathul Rabbani</td>
+                            </tr>
+                            <tr>
+                                <td>Kelas</td>
+                                <td>: IF-6</td>
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+           
+		</div>
+    </div>
+
+    <script>
+        function openPilihan(namaPilihan) {
+            var i;
+            var x = document.getElementsByClassName("pilihan");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(namaPilihan).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
